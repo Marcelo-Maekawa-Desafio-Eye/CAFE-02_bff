@@ -8,6 +8,7 @@ C:\PROJETOS\Eye Desafio Tec\cafe-02_bff
 ├── .prettierrc
 ├── eslint.config.mjs
 ├── Dockerfile
+├── jest.config.ts
 ├── nest-cli.json
 ├── package-lock.json
 ├── package.json
@@ -19,13 +20,15 @@ C:\PROJETOS\Eye Desafio Tec\cafe-02_bff
 │   ├── app.service.ts
 |   ├── auth
 |   │   ├── dto
-|   │   │    └── login.dto.ts         # Data Transfer Object para login
+|   │   │    └── login.dto.ts         
 |   │   ├── guards
-|   │   │    └── jwt-auth.guard.ts    # Guard para verificar o JWT
+|   │   │    └── jwt-auth.guard.ts    
 |   │   ├── services
-|   │   │    └── auth.service.ts      # Lógica de autenticação e geração de token
-|   │   ├── auth.controller.ts        # Controlador para as rotas de autenticação
-|   │   └── auth.module.ts            # Módulo de autenticação
+|   │   │    ├── auth.service.spec.ts
+|   │   │    └── auth.service.ts 
+|   │   ├── auth.controller.spec.ts     
+|   │   ├── auth.controller.ts        
+|   │   └── auth.module.ts
 |   ├── common
 |   |   └── constants.ts
 |   ├── config
