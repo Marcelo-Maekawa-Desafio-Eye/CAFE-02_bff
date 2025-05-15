@@ -17,8 +17,19 @@ C:\PROJETOS\Eye Desafio Tec\cafe-02_bff
 │   ├── app.controller.ts
 │   ├── app.module.ts
 │   ├── app.service.ts
-|   ├──config
-|   |  └──configuration.ts
+|   ├── auth
+|   │   ├── dto
+|   │   │    └── login.dto.ts         # Data Transfer Object para login
+|   │   ├── guards
+|   │   │    └── jwt-auth.guard.ts    # Guard para verificar o JWT
+|   │   ├── services
+|   │   │    └── auth.service.ts      # Lógica de autenticação e geração de token
+|   │   ├── auth.controller.ts        # Controlador para as rotas de autenticação
+|   │   └── auth.module.ts            # Módulo de autenticação
+|   ├── common
+|   |   └── constants.ts
+|   ├── config
+|   |   └──configuration.ts
 │   └── main.ts
 ├── test
 │   ├── app.e2e-spec.ts
