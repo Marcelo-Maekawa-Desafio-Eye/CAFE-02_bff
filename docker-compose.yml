@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  bff:
+    build: .
+    container_name: cafe_bff
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_EXPIRES_IN=${JWT_EXPIRES_IN}
+      - PORT=${PORT}
+    env_file:
+      - .env
