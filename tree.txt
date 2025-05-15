@@ -37,6 +37,7 @@ C:\PROJETOS\Eye Desafio Tec\cafe-02_bff
 ├── test
 │   ├── app.e2e-spec.ts
 │   └── jest-e2e.json
+├── swagger.ts
 ├── tree.txt
 ├── tsconfig.build.json
 └── tsconfig.json
